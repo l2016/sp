@@ -463,20 +463,44 @@ body{font:12px "微软雅黑";}
         margin: 0 auto;
         li{
             margin:0 10px 10px 0;
-            overflow: hidden;
-            position: relative;            
             width: 588px;
             height: 275px;
             float: left;
-            
+            position: relative;
             .sect_tm_1_3{
                 width: 588px;
-                height: 55px;
+                height: 41px;
                 position: absolute;
-                background: red;
                 left: 0;
-                bottom: -55px;
-                z-index: 1;
+                bottom: 0;
+            }
+            figure{
+                width: 588px;
+                height: 234px;
+                overflow: hidden;
+                position: relative;
+                box-shadow: 1px 1px 1px 1px #ccc;
+                p{
+                    width: 588px;
+                    height: 56px;
+                    background: #fff;
+                    position: absolute;
+                    left: 0;
+                    bottom:-56px;
+                    .sect_fu{
+                        width: 120px;
+                        line-height: 56px;
+                        font-size: 16px;
+                        color: #4b585d;
+                    }
+                    .sect_ft{
+                        line-height: 56px;
+                        position: absolute;
+                        right: 5px;
+                        font-size: 20px;
+                        color: #e5004b;
+                    }
+                }
             }
         }
     }

@@ -515,20 +515,45 @@ body {
 }
 #sect_tm_1 #sect_tm_1_2 li {
   margin: 0 10px 10px 0;
-  overflow: hidden;
-  position: relative;
   width: 588px;
   height: 275px;
   float: left;
+  position: relative;
 }
 #sect_tm_1 #sect_tm_1_2 li .sect_tm_1_3 {
   width: 588px;
-  height: 55px;
+  height: 41px;
   position: absolute;
-  background: red;
   left: 0;
-  bottom: -55px;
-  z-index: 1;
+  bottom: 0;
+}
+#sect_tm_1 #sect_tm_1_2 li figure {
+  width: 588px;
+  height: 234px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 1px 1px 1px 1px #ccc;
+}
+#sect_tm_1 #sect_tm_1_2 li figure p {
+  width: 588px;
+  height: 56px;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  bottom: -56px;
+}
+#sect_tm_1 #sect_tm_1_2 li figure p .sect_fu {
+  width: 120px;
+  line-height: 56px;
+  font-size: 16px;
+  color: #4b585d;
+}
+#sect_tm_1 #sect_tm_1_2 li figure p .sect_ft {
+  line-height: 56px;
+  position: absolute;
+  right: 5px;
+  font-size: 20px;
+  color: #e5004b;
 }
 
 /*# sourceMappingURL=index.css.map */

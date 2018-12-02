@@ -135,7 +135,13 @@ function shData(arr){
 	}
 	$(".sect_hd1_1").html(conStr);
 }
-	
-
-
-	
+//限时特卖
+$(function(){
+	var $sf=$("#sect_111 li"),
+		$sfp=$("#sect_111 li p");	
+	$sf.mouseenter(function(){
+		$sfp.eq($(this).index()).stop().animate({"bottom":0},1000);
+	}).mouseleave(function(){
+		$sfp.eq($(this).index()).stop().animate({"bottom":-55},1000);
+	})	
+})
