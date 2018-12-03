@@ -5,7 +5,6 @@ function footerPlay(obj){
 		$(this).find("a").css("color","");			
 	})
 }
-footerPlay(".nav_a");
 footerPlay(".nav_dh_sj");
 $(".nav_dl").mouseenter(function(){
 	$(this).css("color","#fff");
@@ -14,16 +13,18 @@ $(".nav_dl").mouseenter(function(){
 })
 
 $(".nav_a").mouseenter(function(){//一级菜单
-	$(this).find("img").attr("src","img/daohang2.gif");//一级菜单 图片
+	$(this).children("a").css("color","#e5004b");
+	$(this).children().children().children("img").attr("src","img/daohang2.gif");//一级菜单 图片
 	$(this).css("background","#fff");	
-}).mouseleave(function(){
-	$(this).find("img").attr("src","img/daohang1.gif");
+}).mouseleave(function(){	
+	$(this).children("a").css("color","#fff");
+	$(this).children().children().children("img").attr("src","img/daohang1.gif");
 	$(this).css("background","");	
 })
 $(".nav_Li").mouseenter(function(){//二级菜单
-	$(this).find("ul").css("display","block");
+	$(this).children("ul").css("display","block");
 }).mouseleave(function(){
-	$(this).find("ul").css("display","none");
+	$(this).children("ul").css("display","none");
 })
 //benner 左右尖角
 $("#banner").mouseenter(function(){
@@ -239,3 +240,4 @@ function ltdtPlay(){
 ltdtPlay();
 /*footer*/
 footerPlay("footer dd");
+footerPlay("#foot_c ul li");
