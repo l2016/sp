@@ -26,6 +26,10 @@ body {
   font: 12px "微软雅黑";
 }
 
+body, html {
+  height: 100%;
+}
+
 /*header*/
 /*top*/
 #top {
@@ -317,28 +321,96 @@ body {
   bottom: 0;
   right: 0;
 }
+#ban > ul > li > ul > li {
+  line-height: 30px;
+}
 #ban > ul > li > ul > li > p {
-  width: 80px;
+  min-width: 80px;
   text-align: center;
   vertical-align: top;
+  padding: 0 5px;
   color: #000;
   /*婴儿尿裤*/
   display: inline-block;
 }
-#ban > ul > li > ul > li ul {
+#ban > ul > li > ul > li > ul {
   width: 516px;
   display: inline-block;
 }
-#ban > ul > li > ul > li ul li {
+#ban > ul > li > ul > li > ul > li {
   margin: 4px;
-  padding-left: 5px;
+  padding: 0 5px;
   display: inline-block;
   line-height: 12px;
   border-left: 1px solid #878787;
 }
-#ban > ul > li > ul > li ul li a {
+#ban > ul > li > ul > li > ul > li a {
   color: #878787;
   /*大号*/
+}
+
+/*article*/
+article {
+  position: fixed;
+  max-width: 30px;
+  max-height: 120px;
+  right: 30px;
+  bottom: 24px;
+  background: #F96868;
+  z-index: 99999;
+  border-radius: 14px;
+}
+article img {
+  max-width: 30px;
+  max-height: 120px;
+}
+
+/*rigth_1*/
+#rigth_1 {
+  width: 30px;
+  height: 100%;
+  position: fixed;
+  right: 0;
+  top: 0;
+  background: #e5004b;
+  z-index: 99999;
+}
+#rigth_1 ul {
+  width: 100%;
+  margin-top: 300px;
+}
+#rigth_1 ul li {
+  position: relative;
+  margin: 10px 0;
+}
+#rigth_1 ul li .ad {
+  display: block;
+  width: 30px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  padding: 7px 0;
+}
+#rigth_1 ul li span {
+  position: absolute;
+  top: 0;
+  right: -80px;
+  background: #9381f4;
+  font-size: 15px;
+  height: 37px;
+  width: 80px;
+  line-height: 37px;
+  display: block;
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+}
+#rigth_1 ul li span a {
+  padding-left: 7px;
+  color: #fff;
+}
+#rigth_1 ul li:last-of-type {
+  position: absolute;
+  bottom: 20px;
 }
 
 /*section*/

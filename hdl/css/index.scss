@@ -6,6 +6,9 @@ a{text-decoration:none;}
 img{ border:none; vertical-align:middle;}
 h1,h2,h3,h4,h5,h6{font-weight:normal;}
 body{font:12px "微软雅黑";}
+body,html{
+    height: 100%;
+}
 
 /*header*/
 /*top*/
@@ -271,19 +274,23 @@ body{font:12px "微软雅黑";}
         bottom: 0;
         right: 0;
     }
+    >li{
+        line-height: 30px;
+    }
     >li>p{
-        width: 80px;
+        min-width: 80px;
         text-align: center;
         vertical-align: top;
+        padding: 0 5px;
         color: #000;/*婴儿尿裤*/
         display: inline-block;
     } 
-    >li ul{
+    >li>ul{
         width: 516px;       
         display: inline-block;
-        li{
+        >li{
             margin: 4px;
-            padding-left: 5px;
+            padding:0 5px;
             display: inline-block;
             line-height: 12px;
             border-left:1px solid #878787 ;
@@ -293,6 +300,72 @@ body{font:12px "微软雅黑";}
         }
     }
 }
+/*article*/
+article{
+    position: fixed;
+    max-width: 30px;
+    max-height: 120px;
+    right: 30px;
+    bottom: 24px;
+    background: #F96868;
+    z-index: 99999;
+    border-radius: 14px;
+    img{
+        max-width: 30px;
+        max-height: 120px;
+    }
+}
+/*rigth_1*/
+#rigth_1{
+    width: 30px;
+    height: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: #e5004b ;
+    z-index: 99999;
+    ul{
+        width: 100%;
+        margin-top: 300px;
+        li{
+            
+            position: relative;
+            margin: 10px 0; 
+            .ad{
+                display: block;
+                width: 30px;
+                text-align: center;
+                color: white;
+                font-size: 20px;
+                padding: 7px 0;
+                
+            }   
+            span{
+                position: absolute;
+                top: 0;
+                right: -80px;
+                background: #9381f4;
+                font-size: 15px;
+                height: 37px;
+                width: 80px;
+                line-height: 37px;
+                display: block;
+                border-bottom-left-radius: 4px;
+                border-top-left-radius: 4px;
+                a{
+                    padding-left: 7px;
+                    color: #fff;
+                }
+            }        
+        }
+        li:last-of-type{
+            position: absolute;
+            bottom: 20px;
+        }
+    }
+   
+}
+
 /*section*/
 .sect{
     width: 100%;

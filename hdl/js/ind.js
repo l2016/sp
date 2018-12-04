@@ -17,7 +17,7 @@ $(".nav_a").mouseenter(function(){//一级菜单
 	$(this).children().children().children("img").attr("src","img/daohang2.gif");//一级菜单 图片
 	$(this).css("background","#fff");	
 }).mouseleave(function(){	
-	$(this).children("a").css("color","#fff");
+	$(this).children("a").css("color","");
 	$(this).children().children().children("img").attr("src","img/daohang1.gif");
 	$(this).css("background","");	
 })
@@ -241,3 +241,35 @@ ltdtPlay();
 /*footer*/
 footerPlay("footer dd");
 footerPlay("#foot_c ul li");
+/*rigth_1*/
+function asidePaly(){
+	var $aside=$("#rigth_1"),
+		$h=$(window).height(),
+		$oUl=$("#rigth_1 ul");
+		if($h<600&&$h>400){
+			$oUl.css("margin-top",100);
+		}
+		if(400>$h){
+			$aside.css("display","none");
+		}
+	$aside.css("height",$h);
+}
+/*返回顶部*/
+function fanhuiPlay(){
+	$("#rigth_1_last").click(function(){
+		$("html,body").animate({"scrollTop":0},1000);
+	})
+}
+fanhuiPlay();
+asidePaly();
+function fnPaly(){
+	var $ulist=$("#rigth_1 ul li");
+	$ulist.mouseenter(function(){
+		$(this).css("background","#9381f4");
+		$(this).find("span").stop().animate({"right":30},500);
+	}).mouseleave(function(){
+		$(this).css("background","");
+		$(this).find("span").stop().animate({"right":-80},500);
+	})
+}
+fnPaly();
